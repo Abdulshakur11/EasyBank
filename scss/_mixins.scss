@@ -1,0 +1,30 @@
+//RESET THE LIST
+@mixin reset-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+// RESET THE LINK
+@mixin reset-link {
+  text-decoration: none;
+}
+
+// STYLE FOR ALL BUTTONS
+@mixin site-button {
+  padding: 8px 36px;
+  border: none;
+  color: $color-text-white;
+  border-radius: 22px;
+  background-color: #33D35E;
+  background-image: $site-gradient;
+}
+
+// STYLE FOR MEDIA
+
+@mixin media {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+}

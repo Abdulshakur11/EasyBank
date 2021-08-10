@@ -1,0 +1,57 @@
+
+// INTRO SECTION
+
+.intro-section {
+  background-color: #F2F2F2;
+  height: 776px;
+}
+
+.intro__left-box {
+  padding-top: 254px;
+}
+
+.intro__title {
+  width: 394px;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #2D314D;
+  margin: 0;
+}
+
+.intro__text {
+  width: 447px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: #9597A5;
+  margin: 0;
+  margin-top: 26px;
+  margin-bottom: 36px;
+}
+
+.intro__background-imag {
+  display: block;
+  width: 745px;
+  height: 785px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  transform: translate(77%, -573px);
+  background-image: url("../../images/hero-bg-desktop.png");
+}
+
+.intro__phones-imag {
+  display: block;
+  width: 728px;
+  height: 899px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  transform: translate(81%, -144%);
+  background-image: url("../../images/hero-phones-desktop.png");
+}
+ 
+

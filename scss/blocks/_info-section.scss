@@ -1,0 +1,129 @@
+// INFO SECTION
+
+.info {
+  background-color:
+    #f4f5f7;
+}
+
+.info__title {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.714286px;
+  color: #2D314D;
+  margin: 0;
+  padding-top: 96px;
+}
+
+.info__subtitle {
+  width: 635px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: #9597A5;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.info__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  padding-bottom: 94px;
+}
+
+.info__item {
+  width: 255px;
+  margin-top: 72px;
+}
+
+.info__item ~ .info__item {
+  margin-left: 30px;
+}
+
+.info__item-bgcolor::before {
+  position: relative;
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-size: 72px;
+  background-repeat: no-repeat;
+  content: " ";
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 50%;
+}
+
+
+.info__item-img::after {
+  position: absolute;
+  transform: translate(15px, -57px);
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  content: " ";
+  background-image: url("../../images/hand-card.png");
+}
+
+.info__item-img-two::after {
+  position: absolute;
+  transform: translate(24px, -57px);
+  display: block;
+  width: 33.11px;
+  height: 40px;
+  background-size: 33.11px, 40px;
+  background-repeat: no-repeat;
+  content: " ";
+  background-image: url("../../images/phone-dollar.png");
+}
+
+.info__item-img-three:after {
+  position: absolute;
+  transform: translate(15px, -57px);
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  content: " ";
+  background-image: url("../../images/fast-onboarding.png");
+}
+
+.info__item-img-four:after {
+  position: absolute;
+  transform: translate(15px, -57px);
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  content: " ";
+  background-image: url("../../images/open-api.png");
+}
+
+
+.info__item-title {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  color: #2D314D;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.info__item-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #9597A5;
+  margin: 0;
+  margin-top: 26px;
+}
