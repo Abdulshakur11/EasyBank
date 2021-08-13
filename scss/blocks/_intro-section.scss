@@ -1,12 +1,28 @@
-
 // INTRO SECTION
 
 .intro-section {
+  // display: flex;
+  // overflow: hidden;
   background-color: #F2F2F2;
   height: 776px;
 }
 
+.intro__wraper {
+  display: flex;
+  // align-items: center;
+}
+
+.intro__background-imag-res {
+  display: none;
+}
+
+.intro__phones-imag-res {
+  display: none;
+}
+
 .intro__left-box {
+  width: 100%;
+  max-width: 450px;
   padding-top: 254px;
 }
 
@@ -35,23 +51,133 @@
 }
 
 .intro__background-imag {
-  display: block;
-  width: 745px;
-  height: 785px;
-  background-repeat: no-repeat;
-  background-position: top right;
-  transform: translate(77%, -573px);
-  background-image: url("../../images/hero-bg-desktop.png");
+  width: 810px;
+  height: 855px;
+  margin-top: -5px;
+  margin-left: 5%;
 }
 
 .intro__phones-imag {
-  display: block;
-  width: 728px;
+  position: absolute;
+  width: 628px;
   height: 899px;
-  background-repeat: no-repeat;
-  background-position: top right;
-  transform: translate(81%, -144%);
-  background-image: url("../../images/hero-phones-desktop.png");
+  transform: translate(110%);
 }
- 
 
+// RESPONSIVE
+
+@include breakpoint-down (1024px) {
+  .intro__background-imag {
+    margin-top: 50px;
+    transform: translate(153px);
+    width: 499px;
+    height: 480px;
+  }
+
+  .intro__phones-imag {
+    z-index: 1;
+    width: 379px;
+    height: 540px;
+    transform: translate(620px);
+  }
+
+  .intro__left-box {
+    width: 100%;
+    max-width: 300px;
+    padding-top: 150px;
+  }
+
+  .intro__title {
+    width: 300px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .intro__text {
+    width: 300px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+  }
+
+}
+
+
+@include breakpoint-down (768px) {
+  .intro__background-imag {
+    margin-top: 50px;
+    transform: translate(20px);
+    width: 399px;
+    height: 380px;
+  }
+
+  .intro__phones-imag {
+    z-index: 1;
+    width: 279px;
+    height: 440px;
+    transform: translate(469px);
+  }
+
+}
+
+@include breakpoint-down (760px) {
+
+  .intro__wraper {
+    display: block;
+  }
+
+  .intro__background-imag-res {
+    display: block;
+
+  }
+
+  .intro__background-imag {
+    display: none;
+  }
+
+  .intro__phones-imag {
+    display: none;
+  }
+
+  .intro__phones-imag-res {
+    display: block;
+    width: 968px;
+    height: 450px;
+  }
+
+  .intro__left-box {
+    padding-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro__button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@include breakpoint-down (375px) {
+  .intro__background-imag-res {
+    height: 380px;
+  }
+
+  .intro__left-box {
+    padding-top: 0px;
+  }
+
+.intro__button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+}
+
+@include breakpoint-down (320px) {
+  .intro__phones-imag-res {
+    display: block;
+    width: 968px;
+    height: 400px;
+  }
+}
